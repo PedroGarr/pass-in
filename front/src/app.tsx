@@ -1,15 +1,12 @@
-interface MyButtonProps{
-  texto: string
-}
+import { AttendeeList } from "./components/attendee-list";
+import { Header } from "./components/header";
 
-function Mybutton(props: MyButtonProps){
-  return <button className="">{props.texto}</button>
-}
-
+// Paramos em 43
 export function App() {
   return (
-    <div>
-      <Mybutton texto='Click Here'/>
+    <div className="max-w-[1216px] mx-auto py-5">
+      <Header/>
+      <AttendeeList/>
     </div>
   )
 }
